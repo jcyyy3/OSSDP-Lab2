@@ -33,7 +33,6 @@ class Solution {
             return (int) (-sy * x - y + sx * y + x);
         });
 
-        System.out.println(Arrays.toString(numsArr));
 
         if (numsArr[0] == 0) {
             return "0";
@@ -48,7 +47,12 @@ class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
         System.out.println(solution.largestNumber(new int[]{3, 30, 34, 5, 9}));
+        System.out.println(solution.largestNumber(new int[]{3, 30, 34, 5, 9}).equals("9534330"));
         System.out.println(solution.largestNumber(new int[]{10, 2}));
+        System.out.println(solution.largestNumber(new int[]{10, 2}).equals("210"));
         System.out.println(solution.largestNumber(new int[]{1,2,3,4,5,6,7,8,9}));
+        System.out.println(solution.largestNumber(new int[]{1,2,3,4,5,6,7,8,9}).equals("987654321"));
+        System.out.println(solution.largestNumber(new int[]{0,0}));
+        System.out.println(solution.largestNumber(new int[]{0,0}).equals("0"));
     }
 }

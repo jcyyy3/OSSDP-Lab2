@@ -54,5 +54,6 @@ class Solution {
         System.out.println(solution.largestNumber(new int[]{1,2,3,4,5,6,7,8,9}).equals("987654321"));
         System.out.println(solution.largestNumber(new int[]{0,0}));
         System.out.println(solution.largestNumber(new int[]{0,0}).equals("0"));
+        System.out.println(solution.largestNumber(new int[]{456,789,342,124}));
     }
 }
